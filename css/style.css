@@ -1,4 +1,4 @@
-@import url("fonts.googleapis.com/earlyaccess/nats.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@500&display=swap');
 
 *{
     margin: 0;
@@ -21,8 +21,8 @@ header{
 
 h1{
     font-size: 4rem;
-    font-weight: 900;
+    font-weight: 500;
     color: #fff;
-    font-family: 'Arial';
+    font-family: 'Poppins';
 }
 
