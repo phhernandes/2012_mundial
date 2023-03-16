@@ -12,6 +12,11 @@
     --font-default: 'Montserrat';
 }
 
+
+html{
+    font-size: 62,5%;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -19,39 +24,74 @@ body{
     color: var(--text-color);
 }
 
-html{
-    font-size: 62,5%;
-}
-
 header{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
-    background-image: url("../images/hero.jpg");
     height: 100vh;
-    background-size: 100%auto;
-    background-position: center;
-    text-align: center;
     align-items: center;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
 }
 
+
+header::before{
+    content:'';
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/hero00_resized.jpg");
+    background-size: 100% 102%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+
 h1{
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 500;
     color: #fff;
     font-family: 'Poppins';
+    animation:rotate-hor-center 1s cubic-bezier(.455,.03,.515,.955) both;
+}
+
+@keyframes rotate-hor-center {
+    0% {
+        transform:rotateX(0)
+    }
+    100% {
+        transform:rotateX(-360deg)
+    }
 }
 
 .button{
     background:linear-gradient(90deg, #F12711, #F5AF19);
-    padding: 0.5rem 1.5rem;
-    border-radius: 3.5px;
+    padding: 0.75rem 1.75em;
+    border-radius: 15px;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: var(--font-default);
     text-decoration: none;
+    animation:rotate-hor-center 1s cubic-bezier(.455,.03,.515,.955) both;
 }
+
+@keyframes rotate-hor-center {
+    0% {
+        transform:rotateX(0)
+    }
+    100% {
+        transform:rotateX(-360deg)
+    }
+}
+
+.button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #F12711;
+} 
 
 section{
     background-color: #031E3C;
@@ -70,15 +110,17 @@ section{
     gap: 1.5rem;
     text-align: center;
     align-items: center;
-    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 .taca3{
+    gap: 2rem;
     display: flex;
     width: 60%;
     height: auto;
     align-items: center;
-    padding-top: 1.5rem;
+    padding-top: 0.5rem;
   }
 
 p{
@@ -86,7 +128,7 @@ p{
     flex-direction: column;
     padding-left: 12rem;
     padding-right: 12rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 p1{
@@ -94,7 +136,7 @@ p1{
    flex-direction: column;
    padding-left: 12rem;
    padding-right: 12rem;
-   font-size: 2rem;
+   font-size: 1.5rem;
 }
 
 .estadio{
@@ -102,4 +144,5 @@ p1{
     width: 40%;
     height: auto;
     align-items: center;
+    padding-top: 0.5rem;
 }
