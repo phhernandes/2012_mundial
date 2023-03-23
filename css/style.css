@@ -43,11 +43,22 @@ header::before{
     height: 100vh;
     background-image: url("../images/hero00_resized.jpg");
     background-size: 100% 102%;
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top:0px;
     left: 0px;
     right: 0px;
     z-index: -1;
+    animation: zoom 5s ease-in-out;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(1.25);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 
@@ -76,16 +87,6 @@ h1{
     font-size: 1.5rem;
     font-family: var(--font-default);
     text-decoration: none;
-    animation:rotate-hor-center 1s cubic-bezier(.455,.03,.515,.955) both;
-}
-
-@keyframes rotate-hor-center {
-    0% {
-        transform:rotateX(0)
-    }
-    100% {
-        transform:rotateX(-360deg)
-    }
 }
 
 .button:hover{
