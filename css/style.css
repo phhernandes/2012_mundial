@@ -159,11 +159,11 @@ section{
     display: flex;
     justify-content: space-around;
     gap: 4rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 25rem;
+    margin-right: 25rem;
 }
 
 #section-chave li{
@@ -192,7 +192,7 @@ section{
 }
 
 .alalhy{
-    width: 300px;
+    width: 275px;
     height: 385px;
     padding-bottom: 10rem;
 }
@@ -204,7 +204,7 @@ section{
 }
 
 .aucity{
-    width: 250px;
+    width: 275px;
     height: 374px;
     padding-bottom: 10rem;
 }
