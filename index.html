@@ -5,9 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Mundial de Clubes 2012</title>
 </head>
 <body>
+
+    <nav>
+        <div id="hamburger">
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+        </div>
+    
+        <ul id="menu" class="menu-show">
+            <li><a href="#">
+                <i class="fa-solid fa-house"></i>
+                Home</a>
+            </li>
+            <li><a href="#">
+                <i class="fa-sharp fa-solid fa-trophy"></i>
+                Sobre o torneio</a>
+            </li>
+            <li><a href="#">
+                <i class="fa-solid fa-user"></i>
+                Participantes</a>
+            </li>
+            <li><a href="#">
+                <i class="fa-solid fa-store"></i>
+                Loja Retrô</a>
+            </li>
+        </ul>
+    </nav>   
+
     <header>
         <h1 style ="text-align: center"> Mundial de Clubes 2012</h1>
         <a href="#" class="button" >saiba mais</a>
@@ -75,7 +104,61 @@
             </li>
         </ul>
     </section>
-
+    <section id="section-loja">
+        <div class="loja">
+            <form>
+              <h2>Peça a sua camisa de época:</h2>
+              
+              <label for="club-selector">Escolha seu time:</label>
+              <select id="club-selector">
+                <option value="1">Chelsea</option>
+                <option value="2">Corinthians</option>
+                <option value="3">Monterrey</option>
+                <option value="4">Al-Ahly</option>
+                <option value="5">Hyundai Ulsan</option>
+                <option value="6">Auckland City</option>
+              </select>
+          
+              <label>Escolha a camisa:</label>
+              <div class="radio-buttons">
+                <label>
+                  <input type="radio" name="shirt" value="1" checked>
+                  Camisa 1
+                </label>
+                <label>
+                  <input type="radio" name="shirt" value="2">
+                  Camisa 2
+                </label>
+              </div>
+          
+              <label>Você quer colocar seu nome na camisa?</label>
+              <div class="radio-buttons">
+                <label>
+                  <input type="radio" name="name" value="yes">
+                  Sim
+                </label>
+                <label>
+                  <input type="radio" name="name" value="no" checked>
+                  Não
+                </label>
+              </div>
+          
+              <div class="name-input">
+                <label for="name">Seu nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome">
+              </div>
+          
+              <div class="total">
+                <label>Valor total:</label>
+                <span id="total-value">R$250,00</span>
+              </div>
+          
+              <button type="submit">Comprar</button>
+            </form>
+          </div>
+    </section>
+    <script src="./js/loja.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
 
