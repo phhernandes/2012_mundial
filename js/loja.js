@@ -6,7 +6,7 @@ const nameField = document.getElementById('name');
 const totalValue = document.getElementById('total-value');
 
 // Define o valor padrão da camisa sem personalização
-let shirtValue = 250;
+let shirtValue = 249.99;
 
 // Atualiza o valor total quando qualquer uma das seleções é alterada
 function updateTotal() {

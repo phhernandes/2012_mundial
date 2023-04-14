@@ -53,7 +53,7 @@ nav ul{
     gap: 1rem;
     position: fixed;
     right: 0rem;
-    background:linear-gradient(90deg, #052e5e, #031E3C);
+    background:linear-gradient(90deg, #031E3C, #094080);
     height: 100vh;
     width: 20rem;
     z-index: 10;
@@ -67,11 +67,11 @@ nav ul{
 
 #menu a{
     text-decoration: none;
-    color: var(--text-primary);
+    color: rgb(202, 202, 202);
 }
 
 #menu a:hover{
-    color: #56ab2f;
+    color: #fff;
 }
 
 .menu-show{
@@ -96,7 +96,8 @@ header::before{
     width: 100%;
     height: 100vh;
     background-image: url("../images/hero00_resized.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top:0px;
@@ -322,16 +323,16 @@ section{
   
   .loja label {
     display: block;
-    font-weight: bold;
+    font-weight: 750;
     margin-top: 1rem;
     font-size: 2rem;
   }
   
   .loja select, .loja input[type="text"] {
     border: none;
-    border-radius: 4rem;
+    border-radius: 5rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
+    padding: 1.25rem;
     width: 100%;
     margin-top: .5rem;
   }
@@ -361,14 +362,10 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-  .loja .total label {
-    font-weight: bold;
+    font-weight: 700;
 }
         
   .loja .total span {
-    font-weight: bold;
     font-size: 2.2rem;
 }
         
