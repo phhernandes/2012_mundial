@@ -22,6 +22,38 @@ body{
     flex-direction: column;
     font-family: var(--font-default);
     color: var(--text-color);
+    background-color: #031E3C;
+}
+
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.spiner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 16px solid #999;
+    border-top: 16px solid#fd2e70;
+    animation: spin 3s infinite;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
 }
 
 #hamburger{
@@ -76,6 +108,10 @@ nav ul{
 
 .menu-show{
     right: -20rem;
+}
+
+header h1{
+    font-size: clamp (2rem,5vw,2rem);
 }
 
 header{
@@ -203,7 +239,6 @@ section{
     font-size: 3rem;
     margin-top: 1.5rem;
     align-items: center;
-    margin-bottom: 1.5rem;
 }
 
 #section-chave{
@@ -385,4 +420,30 @@ section{
         
   .loja button:hover {
     background-color: #052e5e;
+}
+
+@media (max-width: 980px) {
+    .texto1{
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 2rem;
+        font-family: var(--font-default)
+    }
+    .estadio{
+        display: flex;
+        width: 70%;
+        height: auto;
+        align-items: center;
+        padding-top: 0.5rem;
+    }
+    .taca3{
+        gap: 2rem;
+        display: flex;
+        width: 70%;
+        height: auto;
+        align-items: center;
+        padding-top: 0.5rem;
+    }
 }
