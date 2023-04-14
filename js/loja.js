@@ -14,7 +14,7 @@ function updateTotal() {
 
   // Se o usuário selecionou a opção de nome, adiciona R$10 ao valor total
   if (nameRadios[0].checked) {
-    total += 10;
+    total += 15;
   }
 
   totalValue.innerText = `R$${total.toFixed(2)}`;
