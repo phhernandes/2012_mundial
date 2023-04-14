@@ -87,7 +87,7 @@ nav ul {
     position: fixed;
     right: 0rem;
     background: linear-gradient(90deg, #031E3C, #094080);
-    height: 100vh;
+    height: 30rem;
     width: 20rem;
     z-index: 10;
     transition: 1s;
@@ -133,7 +133,7 @@ header::before {
     width: 100%;
     height: 100vh;
     background-image: url("../images/gup_resized2.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
