@@ -86,12 +86,13 @@ nav ul {
     gap: 1rem;
     position: fixed;
     right: 0rem;
-    background: linear-gradient(90deg, #031E3C, #094080);
-    height: 30rem;
-    width: 20rem;
+    background: linear-gradient(90deg, #052e5e, #6dda3b 300% );
+    height: 23rem;
+    width: 17rem;
     z-index: 10;
     transition: 1s;
     font-size: 1.5rem;
+    border-bottom-left-radius: 4rem;
 }
 
 #menu li {
@@ -100,7 +101,7 @@ nav ul {
 
 #menu a {
     text-decoration: none;
-    color: rgb(202, 202, 202);
+    color: rgb(236, 236, 236);
 }
 
 #menu a:hover {
@@ -213,7 +214,7 @@ section {
 .taca3 {
     gap: 2rem;
     display: flex;
-    width: 45%;
+    width: 55%;
     height: auto;
     align-items: center;
     padding-top: 0.5rem;
@@ -230,7 +231,7 @@ section {
 
 .estadio {
     display: flex;
-    width: 30%;
+    width: 45%;
     height: auto;
     align-items: center;
     padding-top: 0.5rem;
@@ -479,12 +480,12 @@ h2 {
         gap: 1rem;
         position: fixed;
         right: 0rem;
-        background: linear-gradient(90deg, #031E3C, #094080);
         height: 21rem;
         width: 17rem;
         z-index: 10;
         transition: 1s;
         font-size: 1.5rem;
+        border-bottom-left-radius: 5rem;
     }
     #menu a {
         text-decoration: none;
