@@ -162,7 +162,7 @@ h1 {
     font-weight: 500;
     color: #fff;
     font-family: 'Poppins';
-    text-shadow: 5px 5px 2px #000;
+    text-shadow: 5px 5px 2px #1d1d1d;
 }
 
 .button {
@@ -205,7 +205,7 @@ section {
 .taca3 {
     gap: 2rem;
     display: flex;
-    width: 55%;
+    width: 50%;
     height: auto;
     align-items: center;
     padding-top: 0.5rem;
@@ -214,15 +214,15 @@ section {
 .texto1 {
     display: flex;
     flex-direction: column;
-    padding-left: 12rem;
-    padding-right: 12rem;
+    padding-left: 30rem;
+    padding-right: 30rem;
     font-size: 2rem;
     font-family: var(--font-default)
 }
 
 .estadio {
     display: flex;
-    width: 45%;
+    width: 37%;
     height: auto;
     align-items: center;
     padding-top: 0.5rem;
@@ -500,5 +500,14 @@ h2 {
     h1{
         text-shadow: 5px 5px 0px #000;
         font-size: 5rem;
+    }
+    .button {
+        background: linear-gradient(90deg, #56ab2f, #7cd652);
+        padding: .75rem 1.75em;
+        border-radius: 15px;
+        color: #fff;
+        font-size: 2rem;
+        font-family: var(--font-default);
+        text-decoration: none;
     }
 }
