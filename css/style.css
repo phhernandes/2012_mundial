@@ -199,13 +199,12 @@ section {
     text-align: center;
     align-items: center;
     padding-top: 2rem;
-    padding-bottom: 3rem;
 }
 
 .taca3 {
     gap: 2rem;
     display: flex;
-    width: 50%;
+    width: 60%;
     height: auto;
     align-items: center;
     padding-top: 0.5rem;
@@ -214,15 +213,15 @@ section {
 .texto1 {
     display: flex;
     flex-direction: column;
-    padding-left: 30rem;
-    padding-right: 30rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
     font-size: 2rem;
     font-family: var(--font-default)
 }
 
 .estadio {
     display: flex;
-    width: 37%;
+    width: 45%;
     height: auto;
     align-items: center;
     padding-top: 0.5rem;
@@ -238,7 +237,6 @@ h2 {
 
 #section-chave {
     gap: 2rem;
-    padding-bottom: 6rem;
 }
 
 #section-chave ul {
@@ -324,10 +322,9 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-image: url("../images/coleção.jpg");
     background-size: cover;
-    margin-top: 6rem;
+    margin-top: 15rem;
 }
 
 .loja {
@@ -340,7 +337,8 @@ h2 {
     border-radius: 10px;
     width: clamp(300px, 50%, 500px);
     padding: 2rem;
-    margin-top: 6rem;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
 }
 
 .loja h2 {
